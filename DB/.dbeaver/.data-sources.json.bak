@@ -1,0 +1,33 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-185eca4ee92-703fed924b8c77df": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "employeeissuemanagement",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "employeeissuemanagement",
+				"url": "jdbc:postgresql://localhost:5432/employeeissuemanagement",
+				"configurationType": "MANUAL",
+				"home": "PostgreSQL 14.6 (Homebrew",
+				"type": "dev",
+				"provider-properties": {},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
