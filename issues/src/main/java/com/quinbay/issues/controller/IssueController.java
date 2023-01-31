@@ -1,18 +1,19 @@
 package com.quinbay.issues.controller;
 
 import com.quinbay.issues.api.IssuesAPI;
+import com.quinbay.issues.model.Categories;
 import com.quinbay.issues.model.Issues;
 import com.quinbay.issues.model.IssuesInput;
 import com.quinbay.issues.model.ReturnData;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @RestController
 @RequestMapping("/issue")
@@ -68,4 +69,49 @@ public class IssueController {
         return issuesAPI.countOfStatus();
     }
 
+    @DeleteMapping("/deleteIssue")
+    public ReturnData deleteIssue(@RequestParam String issueId) {
+        return issuesAPI.deleteIssue(issueId);
+    }
+
+    @GetMapping("/getCategories")
+    public List<Categories> getCategories() {
+        return issuesAPI.getCategories();
+    }
+
+    @GetMapping("/viewByStatus")
+    public ReturnData viewByStatus(@RequestParam String status) {
+        return issuesAPI.viewByStatus(status);
+    }
+
+    @GetMapping("/viewByCategories")
+    public ReturnData viewByCategories(@RequestParam String category) {
+        return issuesAPI.viewByCategories(category);
+    }
+
+    @PostMapping("/addCategory")
+    public ReturnData addCategory(String category) {
+        return issuesAPI.addCategory(category);
+    }
+
+    @GetMapping("/viewByPriority")
+    public ReturnData viewByPriority(@RequestParam String priority) {
+        return issuesAPI.viewByPriority(priority);
+    }
+
+    @GetMapping("/checkForOverdues")
+    public ReturnData checkForOverdues() {
+        return issuesAPI.checkForOverdues();
+    }
+
+    @GetMapping("/checkForIncomplete")
+    public ReturnData checkForIncomplete() {
+        return issuesAPI.checkForIncomplete();
+    }
+
+    @GetMapping("/details/{pageNo}")
+    public List<Issues> displayByPages(@PathVariable int pageNo) {
+        int pageSize = 5;
+        return issuesAPI.displayByPages(pageNo, pageSize);
+    }
 }

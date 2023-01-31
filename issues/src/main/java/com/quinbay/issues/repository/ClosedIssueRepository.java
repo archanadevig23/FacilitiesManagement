@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface ClosedIssueRepository extends JpaRepository<Issues, String> {
-    List<Issues> findAll();
+public interface ClosedIssueRepository extends JpaRepository<ClosedIssues, Integer> {
+    List<ClosedIssues> findAll();
 }

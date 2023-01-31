@@ -9,5 +9,6 @@ public class ReturnData {
     boolean status;
     String message;
     List<Issues> issues;
-//    List<ClosedIssues> closedIssues;
+    Users userData;
+    List<ClosedIssues> closedIssues;
 }

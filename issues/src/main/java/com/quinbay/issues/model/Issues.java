@@ -3,6 +3,8 @@ package com.quinbay.issues.model;
 import lombok.Data;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -11,17 +13,21 @@ import java.util.Date;
 @Entity
 public class Issues {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    Integer id;
     String issueId;
     String type;
     String category;
     String sla;
     String description;
+    String priority;
     String status;
     String comments;
     String assigneeUserId;
-    Date createdDate;
-    Date deadlineDate;
-    Date reviewedDate;
-    Date completedDate;
-    Date closedDate;
+    String assigneeName;
+    LocalDateTime createdDate;
+    LocalDateTime deadlineDate;
+    LocalDateTime reviewedDate;
+    LocalDateTime completedDate;
+    LocalDateTime closedDate;
 }

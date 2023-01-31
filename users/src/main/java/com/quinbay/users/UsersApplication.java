@@ -10,11 +10,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories("com.quinbay.users.repository")
-@EntityScan("com.quinbay.users.model")
-@ComponentScan({"com.quinbay.users.service", "com.quinbay.users.controller​", "com.quinbay.users.repository"})
-
-@ComponentScan(basePackageClasses=UserController.class)
+//@EnableJpaRepositories("com.quinbay.users.repository")
+//@EntityScan("com.quinbay.users.model")
+//@ComponentScan({"com.quinbay.users.service", "com.quinbay.users.controller​", "com.quinbay.users.repository"})
+//
+//@ComponentScan(basePackageClasses=UserController.class)
 public class UsersApplication {
 
 	public static void main(String[] args) {

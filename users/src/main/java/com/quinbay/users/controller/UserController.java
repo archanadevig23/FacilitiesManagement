@@ -4,10 +4,7 @@ import com.quinbay.users.model.ReturnData;
 import com.quinbay.users.model.Users;
 import com.quinbay.users.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -35,8 +32,14 @@ public class UserController {
         return authService.displayByUserId(userId);
     }
 
-    @GetMapping("/authUser")
-    public ReturnData authUser(@RequestParam String userId, @RequestParam String password) {
-        return authService.authUser(userId, password);
+    @PostMapping("/authUser")
+    public ReturnData authUser(@RequestParam String email, @RequestParam String password) {
+        return authService.authUser(email, password);
     }
+
+//    @GetMapping("/details/{pageNo}")
+//    public List<Users> displayByPages(@PathVariable int pageNo) {
+//        int pageSize = 5;
+//        return authService.displayByPages(pageNo, pageSize);
+//    }
 }

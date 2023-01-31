@@ -2,11 +2,13 @@ drop table issues;
 
 create table issues 
 (
-	issue_id varchar primary key,
+	id int primary key,
+	issue_id varchar,
 	type varchar,
 	category varchar,
 	sla VARCHAR,
 	description varchar,
+	priority VARCHAR,
 	status varchar,
 	comments varchar,
 	assignee_user_id varchar,
