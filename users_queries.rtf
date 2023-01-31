@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red128\green0\blue0;\red255\green0\blue0;\red0\green0\blue128;
+\red0\green0\blue255;\red0\green128\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c50196\c0\c0;\csgenericrgb\c100000\c0\c0;\csgenericrgb\c0\c0\c50196;
+\csgenericrgb\c0\c0\c100000;\csgenericrgb\c0\c50196\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs24 \cf2 DROP
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  users\cf3 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  users\
+( \
+user_id 
+\f0\b \cf4 varchar
+\f1\b0 \cf0  
+\f0\b \cf2 primary
+\f1\b0 \cf0  
+\f0\b \cf2 key
+\f1\b0 \cf0 ,  \
+user_name 
+\f0\b \cf4 varchar
+\f1\b0 \cf0 ,\
+
+\f0\b \cf2 password
+\f1\b0 \cf0  
+\f0\b \cf4 varchar
+\f1\b0 \cf0 ,\
+
+\f0\b \cf2 role
+\f1\b0 \cf0  
+\f0\b \cf4 varchar
+\f1\b0 \cf0 ,\
+designation 
+\f0\b \cf4 varchar
+\f1\b0 \cf0 ,\
+phone 
+\f0\b \cf4 bigint
+\f1\b0 \cf0 ,\
+email 
+\f0\b \cf4 varchar
+\f1\b0 \cf0  (\cf5 40\cf0 ),\
+rep_manager_id 
+\f0\b \cf4 varchar
+\f1\b0 \cf0 (\cf5 30\cf0 )\
+)\cf3 ;\cf0 \
+\
+
+\f0\b \cf2 INSERT
+\f1\b0 \cf0  
+\f0\b \cf2 INTO
+\f1\b0 \cf0  users 
+\f0\b \cf2 VALUES
+\f1\b0 \cf0  \
+(\cf6 'E001'\cf0 ,\cf6 'Archana Devi'\cf0 ,\cf6 'archu@123'\cf0 , \cf6 'Employee'\cf0 , \cf6 'Back end Developer'\cf0 , \cf6 '9876543210'\cf0 ,\cf6 'archu@gmail.com'\cf0 ,\cf6 'E014'\cf0 ),\
+(\cf6 'E002'\cf0 ,\cf6 'Vasunthra'\cf0 ,\cf6 'vasu@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Back end Developer'\cf0 , \cf6 '8765432109'\cf0 ,\cf6 'vasu@gmail.com'\cf0 ,\cf6 'E014'\cf0 ),\
+(\cf6 'E003'\cf0 ,\cf6 'Harish'\cf0 ,\cf6 'hariz@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Back end Developer'\cf0 , \cf6 '8654321099'\cf0 ,\cf6 'hariz@gmail.com'\cf0 ,\cf6 'E014'\cf0 ),\
+(\cf6 'E004'\cf0 ,\cf6 'Kowreesh'\cf0 ,\cf6 'kow@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Back end Developer'\cf0 , \cf6 '8908908663'\cf0 ,\cf6 'kow@gmail.com'\cf0 ,\cf6 'E014'\cf0 ),\
+(\cf6 'E005'\cf0 ,\cf6 'Ruthsan'\cf0 ,\cf6 'ruthsan@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Back end Developer'\cf0 , \cf6 '9878978977'\cf0 ,\cf6 'ruthsan@gmail.com'\cf0 ,\cf6 'E014'\cf0 ),\
+(\cf6 'E006'\cf0 ,\cf6 'Suthir'\cf0 ,\cf6 'suthir@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Back end Developer'\cf0 , \cf6 '8766555738'\cf0 ,\cf6 'suthir@gmail.com'\cf0 ,\cf6 'E014'\cf0 ),\
+(\cf6 'E007'\cf0 ,\cf6 'Abhinesh'\cf0 ,\cf6 'abhinesh@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Back end Developer'\cf0 , \cf6 '9293474647'\cf0 ,\cf6 'abhinesh@gmail.com'\cf0 ,\cf6 'E014'\cf0 ),\
+(\cf6 'E008'\cf0 ,\cf6 'Jaisri'\cf0 ,\cf6 'jaisri@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Front end Developer'\cf0 , \cf6 '9878436282'\cf0 ,\cf6 'jaisri@gmail.com'\cf0 ,\cf6 'E015'\cf0 ),\
+(\cf6 'E009'\cf0 ,\cf6 'Vishnupriya'\cf0 ,\cf6 'vishnupriya@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Front end Developer'\cf0 , \cf6 '7896785674'\cf0 ,\cf6 'vishnupriya@gmail.com'\cf0 ,\cf6 'E015'\cf0 ),\
+(\cf6 'E010'\cf0 ,\cf6 'Brundha'\cf0 ,\cf6 'brundha@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Front end Developer'\cf0 , \cf6 '7689302222'\cf0 ,\cf6 'brundha@gmail.com'\cf0 ,\cf6 'E015'\cf0 ),\
+(\cf6 'E011'\cf0 ,\cf6 'Hariharan'\cf0 ,\cf6 'hari@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Front end Developer'\cf0 , \cf6 '6788493022'\cf0 ,\cf6 'hari@gmail.com'\cf0 ,\cf6 'E015'\cf0 ),\
+(\cf6 'E012'\cf0 ,\cf6 'Nagadeepan'\cf0 ,\cf6 'nagadeepan@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Front end developer'\cf0 , \cf6 '9234563822'\cf0 ,\cf6 'nagadeepan@gmail.com'\cf0 ,\cf6 'E015'\cf0 ),\
+(\cf6 'E013'\cf0 ,\cf6 'Dhanush Praveen'\cf0 ,\cf6 'ddp@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Front end Developer'\cf0 , \cf6 '9983438827'\cf0 ,\cf6 'dhanushpraveen@gmail.com'\cf0 ,\cf6 'E015'\cf0 ),\
+(\cf6 'E014'\cf0 ,\cf6 'Jayaramu'\cf0 ,\cf6 'jayaramu@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Manager'\cf0 , \cf6 '9999937644'\cf0 ,\cf6 'jayaramu@gmail.com'\cf0 ,\cf6 'E016'\cf0 ),\
+(\cf6 'E015'\cf0 ,\cf6 'Prabhakar'\cf0 ,\cf6 'prabhakar@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Manager'\cf0 , \cf6 '9891234562'\cf0 ,\cf6 'prabhakar@gmail.com'\cf0 ,\cf6 'E016'\cf0 ),\
+(\cf6 'E016'\cf0 ,\cf6 'Praveen'\cf0 ,\cf6 'praveen@123'\cf0 , \cf6 'Admin'\cf0 ,\cf6 'Office Administrator'\cf0 , \cf6 '6987738291'\cf0 ,\cf6 'praveen@gmail.com'\cf0 ,\cf6 'E016'\cf0 ),\
+(\cf6 'E017'\cf0 ,\cf6 'Ashok'\cf0 ,\cf6 'ashok@123'\cf0 , \cf6 'Employee'\cf0 ,\cf6 'Senior Manager'\cf0 , \cf6 '9234567822'\cf0 ,\cf6 'ashok@gmail.com'\cf0 ,
+\f0\b \cf2 null
+\f1\b0 \cf0 )\cf3 ;\cf0 \
+\
+
+\f0\b \cf2 select
+\f1\b0 \cf0  * 
+\f0\b \cf2 from
+\f1\b0 \cf0  users\cf3 ;}
